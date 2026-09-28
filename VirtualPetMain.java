@@ -1,10 +1,18 @@
 import javax.swing.*;
 
-public class VPMain {
+public class VirtualPetMain {
     VirtualPet vp = new VirtualPet();
     
-    public VPMain(){
-        vp.feed()
+    public VirtualPetMain(){
+        vp.feed();
+        vp.exercise();
+        this.waitABeat(1000);
+        String ans = this.askForInput("Are you ready to sleeep?");
+        if(ans.equals("yes"))
+            vp.sleep();
+        else
+            vp.exercise();
+
     }
 
     public void waitABeat(int ms){
@@ -26,7 +34,7 @@ public class VPMain {
     }
 
     public static void main(String[] args) {
-        new VPMain();    
+        new VirtualPetMain();    
     }
 }
 

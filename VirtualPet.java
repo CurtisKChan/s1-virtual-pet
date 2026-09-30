@@ -11,8 +11,8 @@ public class VirtualPet {
     // constructor
     public VirtualPet() {
         face = new VirtualPetFace();
-        face.setImage("normal");
-        face.setMessage("Hello.");
+        face.setImage("worried");
+        face.setMessage("You have just been told there is a CSA test in a week");
     }
     
     public void feed() {
@@ -36,9 +36,33 @@ public class VirtualPet {
         face.setImage("asleep");
     }
 
-    public void wonTheLottery(){
-        face.setMessage("No way! I won the lottery!");
-        face.setImage("")
+    public void hearTestAnnoyed(){
+        face.setMessage("Me: No way Mr. Morris!");
+        face.setImage("annoyed");
     }
+
+    public void hearTestFine(){
+        face.setMessage("Me: Okay");
+        face.setImage("normal");
+    }
+
+    public void shockedToldTest(){
+        face.setMessage("Me: Are you serious Mr. Morris?");
+        face.setImage("shocked");
+    }
+
+    public void morrisResponse1(){
+        face.setMessage("Mr Morris: Yes.");
+    }
+
+    public void daysLater(){
+        face.setImage("dayslater");
+    }
+
+    public void study(){
+        
+    }
+
+
 
 } // end Virtual Pet

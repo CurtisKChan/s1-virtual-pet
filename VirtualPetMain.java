@@ -4,14 +4,30 @@ public class VirtualPetMain {
     VirtualPet vp = new VirtualPet();
     
     public VirtualPetMain(){
-        vp.feed();
-        vp.exercise();
+        this.waitABeat(2000);
+        vp.shockedToldTest();
         this.waitABeat(1000);
-        String ans = this.askForInput("Are you ready to sleeep?");
+        vp.morrisResponse1();
+        this.waitABeat(1000);
+        String ans = this.askForInput("Are you annoyed at Mr. Morris?");
         if(ans.equals("yes"))
-            vp.sleep();
-        else
-            vp.exercise();
+            vp.hearTestAnnoyed();
+        else     
+            vp.hearTestFine();
+        this.waitABeat(1000);
+        vp.daysLater();
+        this.waitABeat(2500);
+        String ans = this.askForInput("Will you study?");
+        if(ans.equals("yes"))
+            vp.study();
+        // vp.feed();
+        // vp.exercise();
+        // this.waitABeat(1000);
+        // String ans = this.askForInput("Are you ready to sleeep?");
+        // if(ans.equals("yes"))
+        //     vp.sleep();
+        // else
+        //     vp.exercise();
 
     }
 

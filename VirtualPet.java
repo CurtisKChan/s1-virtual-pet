@@ -6,7 +6,7 @@
 public class VirtualPet {
     
     VirtualPetFace face;
-    int hunger = 0;   // how hungry the pet is.
+    int netIQ = 0;   // how hungry the pet is.
     
     // constructor
     public VirtualPet() {
@@ -15,26 +15,26 @@ public class VirtualPet {
         face.setMessage("You have just been told there is a CSA test in a week");
     }
     
-    public void feed() {
-        if (hunger > 10) {
-            hunger = hunger - 10;
-        } else {
-            hunger = 0;
-        }
-        face.setMessage("Yum, thanks");
-        face.setImage("normal");
-    }
+    // public void feed() {
+    //     if (hunger > 10) {
+    //         hunger = hunger - 10;
+    //     } else {
+    //         hunger = 0;
+    //     }
+    //     face.setMessage("Yum, thanks");
+    //     face.setImage("normal");
+    // }
     
-    public void exercise() {
-        hunger = hunger + 3;
-        face.setMessage("1, 2, 3, jump.  Whew.");
-        face.setImage("tired");
-    }
+    // public void exercise() {
+    //     hunger = hunger + 3;
+    //     face.setMessage("1, 2, 3, jump.  Whew.");
+    //     face.setImage("tired");
+    // }
     
-    public void sleep() {
-        hunger = hunger + 1;
-        face.setImage("asleep");
-    }
+    // public void sleep() {
+    //     hunger = hunger + 1;
+    //     face.setImage("asleep");
+    // }
 
     public void hearTestAnnoyed(){
         face.setMessage("Me: No way Mr. Morris!");
@@ -60,8 +60,36 @@ public class VirtualPet {
     }
 
     public void study(){
-        
+        face.setImage("study");
+        netIQ = netIQ + 2;
     }
+
+    public void happy(){
+        face.setImage("happy");
+    }
+
+    public void tired(){
+        face.setImage("tired");
+    }
+
+    public void sick(){
+        face.setImage("sick");
+    }
+
+    public void dead(){
+        face.setImage("dead");
+    }
+
+    public void sleep(){
+        face.setImage("sleep");
+        face.setMessage("**The Night Before the Test**");
+    }
+
+    public int netIQ(){
+        return netIQ;
+    }
+
+
 
 
 

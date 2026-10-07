@@ -22,27 +22,43 @@ public class VirtualPetMain {
             vp.study();
             this.waitABeat(2000);
             vp.happy();
-            String ans3 = this.askForInput("Do you want to review your quizes to study? Current net IQ: " + vp.netIQ());}
+            String ans3 = this.askForInput("Do you want to review your quizes to study? Current net IQ: " + vp.netIQ());
                 if(ans3.equals("yes")){
                     vp.study();
                     this.waitABeat(2000);
                     vp.tired();
-                    String ans4 = this.askForInput("Want to study the slideshows now? Current net IQ: " + vp.netIQ());}
+                    String ans4 = this.askForInput("Want to study the slideshows now? Current net IQ: " + vp.netIQ());
                         if(ans4.equals("yes")){
                             vp.study();
                             this.waitABeat(2000);
                             vp.sick();
-                            String ans5 = this.askForInput("Do you want to study some more? Current net IQ: " + vp.netIQ());}
+                            String ans5 = this.askForInput("Do you want to study some more? Current net IQ: " + vp.netIQ());
                                 if(ans5.equals("yes"));{
                                     vp.study();
                                     this.waitABeat(2000);
-                                    vp.dead();}
+                                    vp.dead();
+                                }}}}
 
         vp.sleep();
         this.waitABeat(1000);
-        vp.testDay();
-        if netIQ = 0;
+        vp.testDay1();
+        this.waitABeat(2000);
+        vp.testDay2();
+        this.waitABeat(4000);
+        vp.astonished();
+        this.waitABeat(1000);
+        if (vp.netIQ==0)
             vp.fail();
+        else if(vp.netIQ <= 6)
+            vp.pass();
+        else if (vp.netIQ == 8)
+            vp.good();
+        }
+        
+
+       
+    
+        
 
 
 
@@ -58,7 +74,7 @@ public class VirtualPetMain {
         // else
         //     vp.exercise();
 
-    }
+    
 
     public void waitABeat(int ms){
         try {

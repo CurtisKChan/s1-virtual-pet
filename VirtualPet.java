@@ -6,7 +6,7 @@
 public class VirtualPet {
     
     VirtualPetFace face;
-    int netIQ = 0;   // how hungry the pet is.
+    public int netIQ = 0;   // how hungry the pet is.
     
     // constructor
     public VirtualPet() {
@@ -82,15 +82,38 @@ public class VirtualPet {
 
     public void sleep(){
         face.setImage("asleep");
-        face.setMessage("**The Night Before the Test**");
+        face.setMessage("** The Night Before the Test **");
     }
 
     public int netIQ(){
         return netIQ;
     }
 
-    public void testDay(){
+    public void testDay1(){
         face.setImage("testDay");
+    }
+
+    public void testDay2(){
+        face.setImage("testGiven");
+    }
+
+    public void astonished(){
+        face.setImage("astonished");
+    }
+
+    public void fail(){
+        face.setImage("enraged");
+        face.setMessage("** You Failed **");
+    }
+
+    public void pass(){
+        face.setImage("depressed");
+        face.setMessage("** You got a C **");
+    }
+
+    public void good(){
+        face.setImage("estatic");
+        face.setMessage(" You got an A **");
     }
 
 

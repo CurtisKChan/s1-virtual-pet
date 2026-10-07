@@ -18,28 +18,31 @@ public class VirtualPetMain {
         vp.daysLater();
         this.waitABeat(2500);
         String ans2 = this.askForInput("Will you study? Current net IQ: " + vp.netIQ());
-        if(ans2.equals("yes"))
+        if(ans2.equals("yes")){
             vp.study();
             this.waitABeat(2000);
             vp.happy();
-            String ans3 = this.askForInput("Do you want to review your quizes to study? Current net IQ: " + vp.netIQ());
-                if(ans3.equals("yes"))
+            String ans3 = this.askForInput("Do you want to review your quizes to study? Current net IQ: " + vp.netIQ());}
+                if(ans3.equals("yes")){
                     vp.study();
                     this.waitABeat(2000);
                     vp.tired();
-                    String ans4 = this.askForInput("Want to study the slideshows now? Current net IQ: " + vp.netIQ());
-                        if(ans4.equals("yes"))
+                    String ans4 = this.askForInput("Want to study the slideshows now? Current net IQ: " + vp.netIQ());}
+                        if(ans4.equals("yes")){
                             vp.study();
                             this.waitABeat(2000);
                             vp.sick();
-                            String ans5 = this.askForInput("Do you want to study some more? Current net IQ: " + vp.netIQ());
-                                if(ans5.equals("yes"))
+                            String ans5 = this.askForInput("Do you want to study some more? Current net IQ: " + vp.netIQ());}
+                                if(ans5.equals("yes"));{
                                     vp.study();
                                     this.waitABeat(2000);
-                                    vp.dead();
+                                    vp.dead();}
+
         vp.sleep();
         this.waitABeat(1000);
-        
+        vp.testDay();
+        if netIQ = 0;
+            vp.fail();
 
 
 

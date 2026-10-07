@@ -81,13 +81,18 @@ public class VirtualPet {
     }
 
     public void sleep(){
-        face.setImage("sleep");
+        face.setImage("asleep");
         face.setMessage("**The Night Before the Test**");
     }
 
     public int netIQ(){
         return netIQ;
     }
+
+    public void testDay(){
+        face.setImage("testDay");
+    }
+
 
 
 

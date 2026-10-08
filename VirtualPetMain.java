@@ -51,9 +51,10 @@ public class VirtualPetMain {
             vp.fail();
         else if(vp.netIQ <= 6)
             vp.pass();
-        else if (vp.netIQ == 8)
+        else if(vp.netIQ == 8)
             vp.good();
-        }
+        this.waitABeat(1000);
+    }
         
 
        
